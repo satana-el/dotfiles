@@ -1,0 +1,14 @@
+automount:
+  - id: 'auto'
+    automount: true
+    options:
+      mount_options: []
+
+
+mounts:
+  - id: 'all_disks'
+    device: '/dev/disk/by-path/*-usb-*/'
+    mount_path: '/home/helel/ext/{num}'
+    options:
+      fstype: 'auto'
+      options: []
